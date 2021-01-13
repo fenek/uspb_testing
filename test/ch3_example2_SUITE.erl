@@ -1,4 +1,4 @@
--module(example2_SUITE).
+-module(ch3_example2_SUITE).
 
 -include_lib("common_test/include/ct.hrl").
 

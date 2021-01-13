@@ -1,8 +1,8 @@
-{application, cbv,
- [{description, "An OTP application"},
+{application, uspb_testing,
+ [{description, "Unit, System and Property Based testing exxercises"},
   {vsn, "0.1.0"},
   {registered, []},
-  {mod, {cbv_app, []}},
+  {mod, {uspb_testing_app, []}},
   {applications,
    [ kernel
    , stdlib

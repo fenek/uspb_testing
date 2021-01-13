@@ -1,9 +1,9 @@
 %%%-------------------------------------------------------------------
-%% @doc cbv top level supervisor.
+%% @doc uspb_testing top level supervisor.
 %% @end
 %%%-------------------------------------------------------------------
 
--module(cbv_sup).
+-module(uspb_testing_sup).
 
 -behaviour(supervisor).
 

@@ -1,16 +1,16 @@
 %%%-------------------------------------------------------------------
-%% @doc cbv public API
+%% @doc uspb_testing public API
 %% @end
 %%%-------------------------------------------------------------------
 
--module(cbv_app).
+-module(uspb_testing_app).
 
 -behaviour(application).
 
 -export([start/2, stop/1]).
 
 start(_StartType, _StartArgs) ->
-    cbv_sup:start_link().
+    uspb_testing_sup:start_link().
 
 stop(_State) ->
     ok.
