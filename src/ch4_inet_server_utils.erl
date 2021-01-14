@@ -1,4 +1,4 @@
--module(cbv_inet_server_utils).
+-module(ch4_inet_server_utils).
 
 -export([ request/2
         ]).

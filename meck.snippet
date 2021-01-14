@@ -1,0 +1,17 @@
+meck:new(fake).
+meck:new(fake2, [no_link, non_strict]).
+meck:unload(fake2).
+
+meck:expect(fake, f, fun() -> hello end).
+fake:f().
+meck:delete(fake, f, 0).
+
+meck:expect(fake, do, fun('A') -> upper end),fake:do('A').
+meck:expect(fake, y, fun() -> meck:exception(error, badarith) end).
+catch fake:y().
+meck:validate(fake).
+catch fake:do(b).
+meck:validate(fake).
+
+meck:history(fake).
+

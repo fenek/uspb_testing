@@ -32,8 +32,8 @@ init([]) ->
      , period => 1
      },
   ChildSpecs =
-    [#{ id => cbv_inet_server
-      , start => {cbv_inet_server, start_link, []}
+    [#{ id => ch4_inet_server
+      , start => {ch4_inet_server, start_link, []}
       }
     ],
      {ok, {SupFlags, ChildSpecs}}.

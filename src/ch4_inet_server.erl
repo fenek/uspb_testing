@@ -1,4 +1,4 @@
--module(cbv_inet_server).
+-module(ch4_inet_server).
 
 -behaviour(gen_server).
 
@@ -39,7 +39,7 @@ handle_call({request, Url}, _From, State) ->
   #{ fail := Fail
    , success := Success
    } = State,
-  Response = cbv_inet_server_utils:request(Url, 1),
+  Response = ch4_inet_server_utils:request(Url, 1),
   NewState =
     case Response of
       {ok, _} -> State#{success => Success + 1};
