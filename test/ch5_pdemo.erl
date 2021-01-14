@@ -1,4 +1,4 @@
--module(pdemo).
+-module(ch5_pdemo).
 
 -include_lib("proper/include/proper.hrl").
 

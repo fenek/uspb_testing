@@ -1,0 +1,7 @@
+proper:module(ch5_pdemo).
+proper:quickcheck(ch5_pdemo:prop_two()).
+proper:quickcheck(proper:numtests(300, ch5_pdemo:prop_two())).
+
+proper_gen:sample(proper_gen:int()).
+proper_gen:sample(proper_gen:choose(1,100)).
+
