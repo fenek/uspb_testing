@@ -1,4 +1,4 @@
--module(split_count).
+-module(ch5_split_count).
 
 -include_lib("proper/include/proper.hrl").
 
